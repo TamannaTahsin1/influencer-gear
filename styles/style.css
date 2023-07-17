@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Abhaya Libre', serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+.primary-description{
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+.btn-primary{
+    border-radius: 40px;
+    background-color: #E02C6D;
+    color: #FFF;
+    border: none;
+    display: inline-flex;
+    padding: 10px 24px;
+    align-items: flex-start;
+    gap: 8px;
+}
+/* nav section  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 90px;
+}
+nav> ul{
+    display: flex;
+    gap: 10px;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 30px;
+    list-style: none;
+    gap: 60px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #424242;
+}
+/* banner section  */
+.banner-container{
+    margin: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-content{
+    padding: 20px;
+}
+.banner-title{
+    color: #3A3A3A;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-img{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    max-width: 100%;
+}
+/* logo section  */
+.logo-img-container{
+    border: 1px solid rgb(236, 233, 233);
+    padding: 40px 0px;
+    margin: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* popular section  */
+.cards{
+    margin: 50px 400px;
+}
+.popular-title{
+    color: #3A3A3A;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 30px 500px;
+}
+.card{
+    width: 300px;
+    height: 370px;
+    border-radius: 2px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+}
+.card-description{
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+}
+.small-text{
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 1380px;
+}
+/* feature section */
+.feature-container{
+    margin: 60px 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.feature-title{
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+}
+#join-btn{
+    border-radius: 2px;
+}
+/* footer section  */
+footer{
+    margin-top: 120px;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.social-links a{
+    margin-right: 25px;
+}
+
+
+
+
+
+
+
+/* media query  */
+/* for mobile  */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    .primary-title{
+        padding-bottom: 30px;
+        font-size: 30px;
+    }
+    nav, .banner-container, .logo-img-container, .feature-container
+    {
+        flex-direction: column;    
+        justify-content: center;   
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner-img img{
+        width: 180px;
+        height: auto;
+    }
+    .logo-img-container img{
+        padding: 20px;
+    }
+    .feature-img img{
+
+        align-items: right;
+        width: 299px;
+        height: 188px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 40px;
+    }
+    .primary-title{
+        padding-bottom: 30px;
+    }
+    nav, .banner-container
+    {
+        flex-direction: column;
+    }
+}
